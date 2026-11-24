@@ -1,0 +1,215 @@
+{
+ "seed": 42,
+ "benchmark": "held-out same-timbre guitar duets",
+ "environment": {
+  "python": "3.12.10",
+  "platform": "Linux-6.12.105+-x86_64-with-glibc2.36",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "scipy": "1.18.1",
+  "statsmodels": "0.15.0",
+  "sklearn": "1.9.1",
+  "torch": "2.15.0+cu132"
+ },
+ "integrity": {
+  "n_files": 29,
+  "n_mismatch": 0,
+  "mismatches": [],
+  "passed": true
+ },
+ "per_excerpt_recompute": {
+  "n_rows": 1587,
+  "max_abs_diff": {
+   "pi_macro_f1": 0.0,
+   "pi_acc": 0.0,
+   "swap_rate": 0.0,
+   "imb_err": 0.0,
+   "acc_c3p": 0.0
+  },
+  "passed": true
+ },
+ "headline_values": {
+  "guitar_all": {
+   "full_pi_macro_f1": 0.7949056361386349,
+   "full_pi_acc": 0.8179936392753263,
+   "full_imb_err": 0.18109446821403175,
+   "ensemble_pi_macro_f1": 0.7567607894967133,
+   "single_pi_macro_f1": 0.7404266021599202
+  },
+  "GuitarSet guitar": {
+   "full_pi_macro_f1": 0.8721963724551477,
+   "full_pi_acc": 0.8976501304435862,
+   "full_imb_err": 0.10270476296992051,
+   "ensemble_pi_macro_f1": 0.8500369277109613,
+   "single_pi_macro_f1": 0.836202165575805
+  },
+  "Lakh guitar": {
+   "full_pi_macro_f1": 0.7752316305307952,
+   "full_pi_acc": 0.7977174415234055,
+   "full_imb_err": 0.20104821136707826,
+   "ensemble_pi_macro_f1": 0.7330177724967231,
+   "single_pi_macro_f1": 0.7160473678358769
+  },
+  "subset_sizes": {
+   "guitar_all": [
+    69,
+    48
+   ],
+   "GuitarSet guitar": [
+    14,
+    7
+   ],
+   "Lakh guitar": [
+    55,
+    41
+   ]
+  },
+  "subset_sizes_ok": true,
+  "max_abs_diff_vs_expected": 4.440892098500626e-16,
+  "passed": true
+ },
+ "decode_check": {
+  "device": "cuda:0",
+  "criterion": "exact agreement up to a global relabelling of the two streams (all metrics are permutation invariant)",
+  "results": [
+   {
+    "excerpt_id": "gtr_lmd_v3_7f4fbf2e",
+    "stratum": "Lakh guitar",
+    "method": "B3_single_model",
+    "n_notes": 52,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_7f4fbf2e",
+    "stratum": "Lakh guitar",
+    "method": "B3_ensemble_only",
+    "n_notes": 52,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_7f4fbf2e",
+    "stratum": "Lakh guitar",
+    "method": "B2_acoustic_symbolic_hmm",
+    "n_notes": 52,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_7f4fbf2e",
+    "stratum": "Lakh guitar",
+    "method": "DECGD_full",
+    "n_notes": 52,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_7f4fbf2e",
+    "stratum": "Lakh guitar",
+    "method": "ens_plus_capdebias_b2",
+    "n_notes": 52,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_0a13b7db",
+    "stratum": "Lakh guitar",
+    "method": "B3_single_model",
+    "n_notes": 60,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_0a13b7db",
+    "stratum": "Lakh guitar",
+    "method": "B3_ensemble_only",
+    "n_notes": 60,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_0a13b7db",
+    "stratum": "Lakh guitar",
+    "method": "B2_acoustic_symbolic_hmm",
+    "n_notes": 60,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_0a13b7db",
+    "stratum": "Lakh guitar",
+    "method": "DECGD_full",
+    "n_notes": 60,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_lmd_v3_0a13b7db",
+    "stratum": "Lakh guitar",
+    "method": "ens_plus_capdebias_b2",
+    "n_notes": 60,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_gs_v3_f97a7315",
+    "stratum": "GuitarSet guitar",
+    "method": "B3_single_model",
+    "n_notes": 145,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_gs_v3_f97a7315",
+    "stratum": "GuitarSet guitar",
+    "method": "B3_ensemble_only",
+    "n_notes": 145,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_gs_v3_f97a7315",
+    "stratum": "GuitarSet guitar",
+    "method": "B2_acoustic_symbolic_hmm",
+    "n_notes": 145,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_gs_v3_f97a7315",
+    "stratum": "GuitarSet guitar",
+    "method": "DECGD_full",
+    "n_notes": 145,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   },
+   {
+    "excerpt_id": "gtr_gs_v3_f97a7315",
+    "stratum": "GuitarSet guitar",
+    "method": "ens_plus_capdebias_b2",
+    "n_notes": 145,
+    "identical": true,
+    "same_label_names": true,
+    "n_label_diff_up_to_relabel": 0
+   }
+  ],
+  "passed": true
+ },
+ "runtime_s": 122.2,
+ "all_passed": true
+}

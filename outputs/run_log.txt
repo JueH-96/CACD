@@ -1,0 +1,14 @@
+[01:14:10] 1/4 integrity check
+[01:14:11] 2/4 per-excerpt metrics
+[01:14:26] 3/4 statistics (10,000-resample bootstraps)
+[01:14:38]    guitar_all: N=69 G=48 F1 full 0.795 ensemble 0.757 single 0.740
+[01:14:46]    GuitarSet guitar: N=14 G=7 F1 full 0.872 ensemble 0.850 single 0.836
+[01:14:57]    Lakh guitar: N=55 G=41 F1 full 0.775 ensemble 0.733 single 0.716
+[01:14:57] 4/4 live decoding check
+[01:15:14]    gtr_lmd_v3_7f4fbf2e (Lakh guitar, 52 notes): 5/5 identical (15 s)
+[01:15:18]    gtr_lmd_v3_0a13b7db (Lakh guitar, 60 notes): 5/5 identical (4 s)
+[01:15:32]    gtr_gs_v3_f97a7315 (GuitarSet guitar, 145 notes): 5/5 identical (13 s)
+[01:15:32] done in 122.2 s; all checks passed: True
+[01:15:32] guitar_all: DECGD_full PI-Macro-F1 0.795, PI-Acc 0.818; B3 ensemble 0.757; B3 single 0.740
+[01:15:32] GuitarSet guitar: DECGD_full PI-Macro-F1 0.872, PI-Acc 0.898; B3 ensemble 0.850; B3 single 0.836
+[01:15:32] Lakh guitar: DECGD_full PI-Macro-F1 0.775, PI-Acc 0.798; B3 ensemble 0.733; B3 single 0.716
